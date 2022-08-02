@@ -1,0 +1,29 @@
+/* special styles for the form */
+
+.campos input {
+  border-radius: 30px;
+  font-family: 'Poppins', sans-serif;
+  padding: 12px;
+  background-color: #c4c4c4;
+  text-align: center;
+  margin: 10px auto;
+  width: 400px;
+  padding: 12px;
+  border: none;
+}
+
+.campos input::placeholder {
+  color: #ffffff;
+}
+
+#country,
+#state {
+  width: 185px;
+}
+
+#horizon {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  
+}
