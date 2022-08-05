@@ -35,7 +35,7 @@ async function handleLogin(e) {
   // showLoginLoad(false);
   //}
 
-  window.location.href = "../ListCustomers/index.html";
+  window.location.href = "./pages/ListCustomers/index.html";
   showLoginLoad(false);
 }
 //<div id="page-load" class="load"></div>

@@ -4,21 +4,35 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="../../styles/global.css" />
-    <link rel="stylesheet" href="../../styles/back-button.css" />
-    <link rel="stylesheet" href="../../styles/error-banner.css" />
-    <link rel="stylesheet" href="../../styles/form-page.css" />
-    <link rel="stylesheet" href="../../styles/load.css" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/back-button.css" />
+    <link rel="stylesheet" href="./styles/error-banner.css" />
+    <link rel="stylesheet" href="./styles/form-page.css" />
+    <link rel="stylesheet" href="./styles/load.css" />
     <script
       type="text/javascript"
       src="https://unpkg.com/axios@0.26.1/dist/axios.min.js"
     ></script>
-    <script type="text/javascript" src="../../services/api.js"></script>
-    <script type="text/javascript" src="../../scripts/Auth.js"></script>
-    <script type="text/javascript" src="../../scripts/banner.js"></script>
-    <script src="./script.js"></script>
+    <script type="text/javascript" src="./services/api.js"></script>
+    <script type="text/javascript" src="./scripts/Auth.js"></script>
+    <script type="text/javascript" src="./scripts/banner.js"></script>
+    <script src="./login.js"></script>
+    <style>
+      #cadastro {
+        font-family: "Roboto";
+        color: #2562ff;
+        position: absolute;
+        padding: 20px;
+        cursor: pointer;
+        top: 0px;
+        right: 0px;
+      }
+    </style>
   </head>
+
+  <script>
+
+  </script>
   <body class="form-main" onload="init()">
     <section class="section-left">
       <div class="titulos">
@@ -33,12 +47,14 @@
       <div class="bottom-text-section-left">
         <!--back-button component-->
         <a id="lista" href="#">
-          <button type="button" name="button" class="back-button" onclick="showBanner('error', 'Home page indisponivel')">
+          <button
+            type="button"
+            name="button"
+            class="back-button"
+            onclick="showBanner('error', 'Home page indisponivel')"
+          >
             <div>Home</div>
-            <img
-              class="chevron-left"
-              src="../../icons/chevron-left-circle.svg"
-            />
+            <img class="chevron-left" src="./icons/chevron-left-circle.svg" />
           </button>
         </a>
         <!--back-button component-->

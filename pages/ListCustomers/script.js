@@ -231,19 +231,7 @@ class Pagination {
 //funcao que estará em todos os listeners html (onclick, onchange, ...) referentes a troca de página
 async function handleSwapPage(pageNumber) {
   return; 
-  if (pageNumber <= 0) {
-    pageNumber = 0;
-    blockButtonsPagination("left", true);
-    return;
-  }
-  if (this.page.totalPages && pageNumber > this.page.totalPages) {
-    //Se o numero total de paginas não for zero e pageNumber maior que o total de paginas, bloqueie
-    pageNumber = this.page.totalPages;
-    blockButtonsPagination("right", true);
-    return;
-  }
-  blockButtonsPagination("all", false);
-  await this.page.constructPage(pageNumber);
+  //TODO: Impletation swap page
 }
 
 //Classe responsável por tudo que é referente a ordenação da página pelos campos
