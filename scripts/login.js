@@ -8,8 +8,8 @@ function showLoginLoad(control) {
 }
 async function handleLogin(e) {
   e.preventDefault();
-  var username = document.getElementById("username").value;
-  var password = document.getElementById("pass").value;
+  let username = document.getElementById("username").value;
+  let password = document.getElementById("pass").value;
 
   if (password.length < 8) {
     // showBanner é uma função em ./scrips/banner.js

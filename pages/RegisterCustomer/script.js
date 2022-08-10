@@ -1,7 +1,7 @@
 Auth.validate(api);
 
 function showRegisterLoad(control) {
-  var registerButton = document.getElementById("cadastrar");
+  let registerButton = document.getElementById("cadastrar");
   registerButton.innerHTML = control
     ? "<div id='page-load' style='display: flex;' class='load'></div>"
     : "Cadastrar";
@@ -49,6 +49,6 @@ async function handleSubmit(e) {
 
 function init() {
   //form
-  var form = document.querySelector("#registerForm");
+  let form = document.querySelector("#registerForm");
   form.addEventListener("submit", handleSubmit);
 }

@@ -80,7 +80,7 @@ function showListCustomers(customers) {
 
 //Exibi o numero total de hospedes que existe no banco de dados
 function showTotalCustomers(total) {
-  var { totalCustomers } = htmlElements();
+  let { totalCustomers } = htmlElements();
   totalCustomers.innerText = total;
 }
 
